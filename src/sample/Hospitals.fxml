@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneHospitals" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerHospitals">
+   <children>
+      <ImageView fitHeight="424.0" fitWidth="628.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/cpa2bg.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="320.0" fitWidth="325.0" layoutX="30.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/k8.png" />
+         </image>
+      </ImageView>
+      <MenuButton fx:id="itemBarangay" layoutX="408.0" layoutY="51.0" mnemonicParsing="false" text="BARANGAY">
+        <items>
+            <MenuItem fx:id="itemUno" mnemonicParsing="false" text="UNO" />
+            <MenuItem fx:id="itemDos" mnemonicParsing="false" text="DOS" />
+            <MenuItem fx:id="itemTres" mnemonicParsing="false" text="TRES" />
+          <MenuItem fx:id="itemKuatro" mnemonicParsing="false" text="KUATRO" />
+          <MenuItem fx:id="itemSingko" mnemonicParsing="false" text="SINGKO" />
+            <MenuItem fx:id="itemSais" mnemonicParsing="false" text="SAIS" />
+            <MenuItem fx:id="itemSyete" mnemonicParsing="false" text="SIETE" />
+            <MenuItem fx:id="itemOtso" mnemonicParsing="false" text="OTSO" />
+            <MenuItem fx:id="itemNuebe" mnemonicParsing="false" text="NUEBE" />
+        </items>
+      </MenuButton>
+      <Button layoutX="361.0" layoutY="342.0" mnemonicParsing="false" onAction="#actionBack" prefHeight="25.0" prefWidth="94.0" text="Back" />
+      <Circle layoutX="191.0" layoutY="191.0" radius="17.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="125.0" layoutY="19.0" text="A">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="245.0" layoutY="19.0" text="B">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="346.0" layoutY="115.0" text="C">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="345.0" layoutY="250.0" text="D">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="246.0" layoutY="345.0" text="E">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="125.0" layoutY="345.0" prefHeight="17.0" prefWidth="10.0" text="F">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="250.0" prefHeight="17.0" prefWidth="10.0" text="G">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="115.0" prefHeight="17.0" prefWidth="10.0" text="H">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="482.0" layoutY="342.0" mnemonicParsing="false" onAction="#buttonNext" prefHeight="25.0" prefWidth="94.0" text="Next" />
+      <Line fx:id="toA" endX="-100.0" endY="-133.0" layoutX="262.0" layoutY="180.0" rotate="-23.0" startX="-100.0" startY="3.0" strokeWidth="0.0" />
+      <Line fx:id="toB" endX="-16.5" endY="-99.0" layoutX="281.0" layoutY="162.0" rotate="-18.0" startX="-104.5" startY="4.0" strokeWidth="0.0" />
+      <Line fx:id="toC" endX="39.5" endY="-32.0" layoutX="293.0" layoutY="182.0" rotate="-15.0" startX="-95.5" startY="-13.0" strokeWidth="0.0" />
+      <Line fx:id="toD" endX="15.5" endY="69.0" layoutX="307.0" layoutY="187.0" rotate="-9.0" startX="-101.0" startY="-2.0" strokeWidth="0.0" />
+      <Line fx:id="toE" endX="-48.5" endY="132.0" layoutX="294.0" layoutY="203.0" rotate="-4.0" startX="-93.5" strokeWidth="0.0" />
+      <Line fx:id="toF" endX="-36.5" endY="-53.0" layoutX="218.0" layoutY="253.0" rotate="3.0" startX="-82.5" startY="79.0" strokeWidth="0.0" />
+      <Line fx:id="toG" endX="54.5" endY="-48.0" layoutX="120.0" layoutY="234.0" rotate="6.0" startX="-63.5" startY="18.0" strokeWidth="0.0" />
+      <Line fx:id="toH" endX="35.5" endY="25.0" layoutX="143.0" layoutY="144.0" rotate="13.0" startX="-99.5" startY="1.0" strokeWidth="0.0" />
+      <Line fx:id="toI" endX="-20.5" endY="91.0" layoutX="222.0" layoutY="231.0" rotate="-117.0" startX="-106.5" startY="-12.0" strokeWidth="0.0" />
+      <Label fx:id="labelMap" layoutX="419.0" layoutY="132.0" prefHeight="152.0" prefWidth="175.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="paneView" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerView">
+   <children>
+      <ImageView fitHeight="424.0" fitWidth="600.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/cpa2bg.jpg" />
+         </image>
+      </ImageView>
+      <ListView fx:id="lv" layoutX="38.0" layoutY="47.0" prefHeight="231.0" prefWidth="525.0" />
+      <Button layoutX="109.0" layoutY="287.0" mnemonicParsing="false" onAction="#buttonBack" prefHeight="25.0" prefWidth="150.0" text="Back" />
+      <MenuButton fx:id="sortBar" layoutX="350.0" layoutY="287.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Sorted By: Default">
+        <items>
+            <MenuItem fx:id="defaultSort" mnemonicParsing="false" text="Default" />
+          <MenuItem fx:id="ageSort" mnemonicParsing="false" text="Age" />
+            <MenuItem fx:id="barangaySort" mnemonicParsing="false" text="Barangay" />
+          <MenuItem fx:id="maleSort" mnemonicParsing="false" text="Gender (Male)" />
+            <MenuItem fx:id="femaleSort" mnemonicParsing="false" text="Gender (Female)" />
+        </items>
+      </MenuButton>
+   </children>
+</AnchorPane>

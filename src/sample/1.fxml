@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller1">
+   <children>
+      <ImageView fitHeight="433.0" fitWidth="648.0" layoutX="-18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/IMG_0962.JPG" />
+         </image>
+      </ImageView>
+      <Button layoutX="252.0" layoutY="274.0" mnemonicParsing="false" onAction="#buttonStart" text="Enter Information" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="113.0" prefHeight="35.0" prefWidth="584.0" text="This program follows an algorithm on the ranking in the prioritization of " textFill="WHITE">
+         <font>
+            <Font name="Courier" size="13.0" />
+         </font></Label>
+      <Label layoutX="87.0" layoutY="65.0" text="VACCINE PRIORITIZATION" textFill="WHITE">
+         <font>
+            <Font name="Georgia Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="148.0" prefHeight="35.0" prefWidth="584.0" text="the distribution of vaccine in these times. Several factors such as an" textFill="WHITE">
+         <font>
+            <Font name="Courier" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="183.0" prefHeight="35.0" prefWidth="584.0" text="individual's age, profession, and members of the same household are taken" textFill="WHITE">
+         <font>
+            <Font name="Courier" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="218.0" prefHeight="35.0" prefWidth="584.0" text="into consideration. " textFill="WHITE">
+         <font>
+            <Font name="Courier" size="13.0" />
+         </font>
+      </Label>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

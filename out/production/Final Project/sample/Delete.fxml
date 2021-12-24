@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="paneDelete" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerDelete">
+    <children>
+        <ImageView fitHeight="424.0" fitWidth="600.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/cpa2bg.jpg" />
+            </image>
+        </ImageView>
+        <ListView fx:id="lv" layoutX="38.0" layoutY="47.0" prefHeight="231.0" prefWidth="525.0" />
+        <Button layoutX="98.0" layoutY="300.0" mnemonicParsing="false" onAction="#buttonBack" prefHeight="25.0" prefWidth="135.0" text="Return to Menu" />
+        <MenuButton fx:id="sortBar" layoutX="368.0" layoutY="300.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Sorted By: Default">
+            <items>
+                <MenuItem fx:id="defaultSort" mnemonicParsing="false" text="Default" />
+                <MenuItem fx:id="ageSort" mnemonicParsing="false" text="Age" />
+                <MenuItem fx:id="barangaySort" mnemonicParsing="false" text="Barangay" />
+                <MenuItem fx:id="maleSort" mnemonicParsing="false" text="Gender (Male)" />
+                <MenuItem fx:id="femaleSort" mnemonicParsing="false" text="Gender (Female)" />
+            </items>
+        </MenuButton>
+      <Button fx:id="identityDelete" layoutX="233.0" layoutY="343.0" mnemonicParsing="false" onAction="#buttonDelete" prefHeight="25.0" prefWidth="135.0" text="Delete Entry" />
+    </children>
+</AnchorPane>

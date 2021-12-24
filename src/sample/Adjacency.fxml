@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="paneAdjacency" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerAdjacency">
+   <children>
+      <ImageView fitHeight="424.0" fitWidth="636.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/cpa2bg.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="83.0" layoutY="344.0" mnemonicParsing="false" onAction="#buttonBack" prefHeight="25.0" prefWidth="143.0" text="Back" />
+      <Label fx:id="textH" alignment="CENTER" layoutX="24.0" layoutY="116.0" prefHeight="211.0" prefWidth="261.0" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font></Label>
+      <Label fx:id="textB" alignment="CENTER" layoutX="316.0" layoutY="116.0" prefHeight="211.0" prefWidth="261.0" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Black" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="67.0" text="ADJACENCY MATRIX OF">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="82.0" text="HOSPITALS TO EACH OTHER">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="354.0" layoutY="80.0" text="BARANGAYS AND HOSPITALS">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="374.0" layoutY="65.0" text="ADJACENCY MATRIX OF">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="378.0" layoutY="344.0" mnemonicParsing="false" onAction="#buttonQuit" prefHeight="25.0" prefWidth="143.0" text="Quit Program" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pane2" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller2">
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+   <children>
+      <ImageView fitHeight="424.0" fitWidth="738.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/cpa2bg.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="identityAdd" layoutX="244.0" layoutY="122.0" mnemonicParsing="false" onAction="#buttonAdd" prefHeight="27.0" prefWidth="113.0" text="Add" />
+      <Button fx:id="identityDelete" layoutX="244.0" layoutY="165.0" mnemonicParsing="false" onAction="#buttonDelete" prefHeight="27.0" prefWidth="113.0" text="Delete" />
+      <Button fx:id="identityView" layoutX="244.0" layoutY="211.0" mnemonicParsing="false" onAction="#buttonView" prefHeight="25.0" prefWidth="113.0" text="View Current Data" />
+      <Button fx:id="identityPrio" layoutX="244.0" layoutY="257.0" mnemonicParsing="false" onAction="#buttonPrio" prefHeight="27.0" prefWidth="113.0" text="Prioritization" />
+      <Button fx:id="identityExit" layoutX="244.0" layoutY="306.0" mnemonicParsing="false" onAction="#buttonExit" prefHeight="27.0" prefWidth="113.0" text="Exit" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="220.0" layoutY="57.0" text="MAIN MENU" underline="true">
+         <font>
+            <Font name="Cambria Bold" size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
