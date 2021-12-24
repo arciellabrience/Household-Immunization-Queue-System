@@ -211,7 +211,7 @@ into an array and creates a string to properly format the
 information that will be concatenated into the directory text file 
 using a FileWriter variable.The format for each entry in the 
 directory is set as such:<br /><br />
-~NAME-AGE-SEX-PROFESSION_LEVEL-BARANGAY-HOUSE_NUMBER <br />
+~NAME-AGE-SEX-PROFESSION_LEVEL-BARANGAY-HOUSE_NUMBER <br /><br />
 
 The tilde (~) symbol acts as a separator for each entry as the 
 program traverses through the file which serves a dual purpose 
