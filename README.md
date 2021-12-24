@@ -196,7 +196,7 @@ To give highlight, the undo feature allows the “locked” text
 input, which is enabled via the ticking of the checkboxes, to be
 revoked. This is an additional feature of the program that utilizes 
 a stack data structure, allowing the program to return to its 
-previous state and disregarding the latest entry of the user.
+previous state and disregarding the latest entry of the user.<br /><br />
 The function for checking the input validity as well as the 
 addition of the valid entries into the directory are both handled 
 by the Submit button. The function that corresponds to this 
@@ -207,13 +207,14 @@ the function also reads the current directory to see if an instance
 of repetition may occur when compared to that of the pending 
 user-input entry. The function handles any minor nuances that 
 may cause loopholes in the source code such as the case 
-sensitivity of two exact entries. 
+sensitivity of two exact entries. <br /><br />
 Once validated, the program saves each category of the entry 
 into an array and creates a string to properly format the 
 information that will be concatenated into the directory text file 
-using a FileWriter variable. The format for each entry in the 
-directory is set as such:
-~NAME-AGE-SEX-PROFESSION_LEVELBARANGAY-HOUSE_NUMBER
+using a FileWriter variable.The format for each entry in the 
+directory is set as such:<br /><br />
+~NAME-AGE-SEX-PROFESSION_LEVEL-BARANGAY-HOUSE_NUMBER <br />
+
 The tilde (~) symbol acts as a separator for each entry as the 
 program traverses through the file which serves a dual purpose 
 of safely determining a valid input and the prevention of reading 
@@ -231,7 +232,7 @@ button on the lower left allows the user to backtrack to the main
 menu. Initially, the data displayed in list view is set by default, 
 such that the order of its presentation is based on how the 
 database or file is read per line. The sorting of the database can 
-be by set by age, barangay, and displayed by sex.
+be by set by age, barangay, and displayed by sex.<br /><br />
 Throughout the program’s runtime, similar structures may 
 be present in terms of the sorting options, file reading, string 
 manipulation and displaying of data as an array. The reading of 
@@ -242,7 +243,7 @@ line-by-line such as removing unnecessary symbols and
 accessing specific indices. The list is then converted to an array 
 and sets the text of the list view based on the data structure. 
 Selection mode was set as single, and so deletion is done one at 
-a time. 
+a time. <br /><br />
 The delete button converts the selected item from the list 
 view to a String, then extracts the name from both the list view 
 and the file to string manipulation. Reading through the file will 
@@ -266,7 +267,7 @@ in the SceneBuilder. The program repeats the prior steps until it
 reaches the end of the text file or if the line it has read returns a 
 null value. This ensures that all the entries in the database, 
 whether predetermined or user-inputted, are properly organized 
-and displayed in the GUI integration.
+and displayed in the GUI integration.<br /><br />
 With sorting the age in ascending order, while reading 
 through the file, the initial list of strings is traversed through a 
 nested loop, such that each element is compared to one another 
@@ -276,13 +277,13 @@ variable with data type String was declared, and the LinkedList
 in Java was utilized in pushing the lowest age belonging to a 
 particular individual. String manipulation was done to convert 
 the LinkedList to an array, and then once again displays the data 
-as an array. 
+as an array. <br /><br />
 If sorted by sex, the same procedure is done for either sex, 
 wherein the file is read, then compared for each line if the specific index is either equal to “Male” or “Female”. For 
 instance, if sorted by gender is clicked, if “Male” is in the 
 specific line, the entire line is pushed to a LinkedList. The 
 display of the all-male individuals is stored in an array and 
-displayed with string manipulation as well.
+displayed with string manipulation as well.<br /><br />
 Lastly, if sorted by barangay, Trees are utilized to establish 
 the relationship of the house numbers under it, such that 
 BufferedReader classes was used to read through each house. 
@@ -292,7 +293,7 @@ house number in a barangay. While reading the text file, the if
 statement, or the first run of the while loop adds a new Tree to 
 the houseNumList and sets the first index as its root. For later 
 use, a boolean variable houseExists was declared and initialized 
-to be false.
+to be false.<br /><br />
 The for loop that checks per Tree value to the houseNumList 
 under this else statement checks if the house numbers are the 
 same with each Tree through string manipulation once again. If 
@@ -302,7 +303,7 @@ loop is another if statement that checks if the boolean
 houseExists is true, such that a new Tree is added to the 
 houseNumList and sets it as a root in the ArrayList. The 
 BufferedReader is closed as this ends the traversal for reading 
-house numbers.
+house numbers.<br /><br />
 A new BufferedReader is now declared for reading through 
 the barangays, as well as a new ArrayList of LinkedList for 
 barangays denoted as barangayList is declared. While reading 
@@ -319,7 +320,7 @@ structure is pushed to a specific barangay in the LinkedList.
 Outside the for loop, if boolean brgyExists is true, such that if 
 the same barangay is detected, houseNumList is traversed, and 
 looks for houses within the same barangay. If a match is found, 
-the house is pushed to the LinkedList.
+the house is pushed to the LinkedList.<br /><br />
 For the display in list view, the brgyList is traversed by a for 
 loop and gets the index of the name of the barangay,
 consequently presented within the list view; and another for loop 
@@ -340,8 +341,7 @@ individual priority scores of each member of the household. The
 calculation of the overall household scores are executed inside a 
 large, nested for-loop that runs every other necessary function 
 such as sorting and displaying the sorted values. As the user is 
-directed to the window, the listview of the prioritized list as 
-shown in Figure 6 is accomplished by first creating an ArrayList 
+directed to the window, the listview of the prioritized list is accomplished by first creating an ArrayList 
 that stores Tree data structures containing the data on each 
 person in a specific household. A BufferedReader of the 
 directory is then initialized and sequentially reads each line of 
@@ -350,7 +350,8 @@ null, the program saves the line it reads into a string. Each line
 in the database is formatted the same way as aforementioned in 
 the entry screen section and is split using the same regex to 
 create an array containing specific information about each 
-patient. The file reader continues, and a Tree 
+patient. <br /><br />
+The file reader continues, and a Tree 
 is created for the corresponding address of the patient read if one 
 has not been made yet. This is to ensure that there will be no 
 duplicates and the individuals of a specific household will be 
@@ -363,7 +364,7 @@ but will now contain linked lists that hold specific trees as
 houses in the previous ArrayList that are in the same barangay 
 as the one being referenced. This would then result in an 
 ArrayList that acts as a storage structure at the very top for ease
-of access. 
+of access. <br /><br />
 To properly summarize, the main array list would contain 
 linked lists (barangays), which would contain grouped trees 
 (households) of the same barangay, which would contain string 
@@ -375,18 +376,18 @@ the source code would not require any changes if it were given
 a different directory, or if new entries are added at any given 
 time as the only variable declarations made in this whole 
 segment would be those of the two array lists and some 
-placeholder variables. 
+placeholder variables. <br /><br />
 Once complete, the program would then need to determine 
 the overall priority score of each household to begin prioritizing,
 which would the most amount of attention. In its execution the program would traverse through each barangay (linked list)
 before it is able to traverse through each house (tree) using the 
 in-order traversal method to read information on each individual 
 in the family. The computation processes are shown in the 
-formulas below:
+formulas below: <br /><br />
 Individual score = number of people in the household + 
-profession level + age score
+profession level + age score <br /><br />
 House score = (total individual scores) / (number of people 
-in the household)
+in the household) <br /><br />
 The profession level of an individual is a rating from 1 to 5 
 depending on the occupation of the individual and its risk factor 
 in terms of susceptibility to infection. The age score is a factor 
@@ -396,7 +397,8 @@ and young people. After having calculated the scores of each
 household in a barangay, they are then sorted based on their 
 calculated priority and are sorted and placed in a queue data 
 structure. The resulting queue is now popped one by one as it is 
-displayed, along with the corresponding priority score. With regards to the second scene, the display of the K8 graph 
+displayed, along with the corresponding priority score. <br /><br />
+With regards to the second scene, the display of the K8 graph 
 is simply a visual representation of the barangay’s location with 
 its distances from each hospital is set as the graph’s edges. 
 Though not drawn to scale, it depicts the relationship from one 
@@ -407,7 +409,7 @@ Google Maps. The sequence of the hospitals near a certain
 barangay is printed on the other side, to show which hospital is 
 nearer from a certain vertex. These visual aids serve as 
 supplementary understanding on how graphs can be applied in 
-the real world.
+the real world. <br /><br />
 For the final scene of the program, two adjacency matrices 
 are displayed, wherein the first shows a representation of the 
 distances of hospitals with one another, while the second one 
