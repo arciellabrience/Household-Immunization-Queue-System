@@ -451,7 +451,7 @@ the user, such that it becomes substantial to a point that
 verification IDs are necessary to participate in the vaccination 
 program.
 
-### Authors
+## Authors
 
 #### Arciella Brience C. Crisostomo [arciella_brience_crisostomo@dlsu.edu.ph]
 
