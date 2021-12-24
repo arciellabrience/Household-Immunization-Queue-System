@@ -450,3 +450,11 @@ highly recommended that more data should be retrieved from
 the user, such that it becomes substantial to a point that 
 verification IDs are necessary to participate in the vaccination 
 program.
+
+### Authors
+
+#### Arciella Brience C. Crisostomo [arciella_brience_crisostomo@dlsu.edu.ph]
+
+#### Dustin Kyle D. Landicho [dustin_kyle_landicho@dlsu.edu.ph]
+  
+#### John Emmanuel E. Pareja [j-em_pareja@dlsu.edu.ph]
