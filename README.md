@@ -93,9 +93,7 @@ move the user to a specific screen, such that:
 
 ### Add Entry Screen
 Upon clicking the add button from the main menu, a form-
-like screen will be presented to the user asking to input an
-
-individual’s name, age, gender, profession class, barangay, and
+like screen will be presented to the user asking to input an individual’s name, age, gender, profession class, barangay, and
 house number. The age, profession class, and numbers have a
 prefix of “A”, “P”, and “H”, respectively, to ease the
 manipulation of the input object within an array, along with
