@@ -1,4 +1,4 @@
-# Vaccine-Hospital-Prioritization-Program
+# Household-Immunization-Queue-System
 Data Structures and Algorithms Laboratory (LBYCPA2) course using the Java programming language in IntelliJ IDEA software.
 
 ## Signficance and Social Impact
